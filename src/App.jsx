@@ -8,10 +8,10 @@ import KitchenTips from './components/kitchenTips';
 import Menu from './components/menu';
 import SelectedRecipe from './components/selectedReciipeView';
 import AboutMain from './components/aboutMain';
-import KnifeSkills from './components/tips/knifeSkills';
-import KitchenCleaningTips from './components/tips/cleanliness';
-import KitchenSafetyRules from './components/tips/safety';
-import KitchenStorageTips from './components/tips/storage';
+import KnifeSkills from './components/knifeSkills';
+import KitchenCleaningTips from './components/cleanliness';
+import KitchenSafetyRules from './components/safety';
+import KitchenStorageTips from './components/storage';
 
 function App() {
   const [selectedRecipeId, setSelectedRecipeId] = useState(null);

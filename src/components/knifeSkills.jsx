@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import CuttingIntro from '/Users/georgealvarez/fine-dining/vite-project/src/assets/CuttingIntro.mp4'
+import CuttingIntro from '../assets/CuttingIntro.mp4'
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'; 
 
 
