@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import CleaningVid from '../assets/Cleaning.mp4';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'; 
-import Footer from '../footer';
+
 
 
 const KitchenCleaningTips = () => {
