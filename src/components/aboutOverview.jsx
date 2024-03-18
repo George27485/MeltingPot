@@ -13,7 +13,7 @@ const AboutUsOverview = () => (
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome</h1>
         <img src={spoon}/>
         <p className="mb-4 text-gray-500">Welcome to The Melting Pot! At The Melting Pot, we're passionate about bringing people together through the joy of cooking and sharing delicious recipes. Whether you're a seasoned chef or a beginner in the kitchen, our platform is designed to inspire and empower you to explore the culinary world and create memorable meals.</p>
-        <button type="button" className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800">Know More</button>
+     
       </div>
 
       {/* Knife Image */}

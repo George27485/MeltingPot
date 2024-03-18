@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function Menu({ selectedRecipeId, setSelectedRecipeId }) {
   const [meals, setMeals] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [loading, setLoading] = useState(true); // State to track loading status
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,6 +25,7 @@ function Menu({ selectedRecipeId, setSelectedRecipeId }) {
         }
 
         setMeals(allMeals);
+        setLoading(false); 
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -41,17 +43,21 @@ function Menu({ selectedRecipeId, setSelectedRecipeId }) {
     meal.strMeal.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  if (loading) {
+    return <div className='flex items-center text-center '>Loading...</div>; 
+  }
+
   return (
     <div className="flex flex-col items-center justify-center overflow-auto h-auto w-screen mt-20">
       <div>
-      <h1 className="text-white text-3xl font-bold mb-8">Explore Recipes</h1>
-      <input
-        type="text"
-        placeholder="Search by name"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="w-full px-4 py-2 mb-4 bg-gray-800 text-white rounded-md focus:outline-none flex text-center"
-      />
+        <h1 className="text-white text-3xl font-bold mb-8">Explore Recipes</h1>
+        <input
+          type="text"
+          placeholder="Search by name"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full px-4 py-2 mb-4 bg-gray-800 text-white rounded-md focus:outline-none flex text-center"
+        />
       </div>
       <div className="flex flex-wrap justify-center max-w-screen-lg">
         {filteredRecipes.map((meal) => (

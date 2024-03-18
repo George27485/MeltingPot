@@ -52,11 +52,11 @@ const KnifeSkills = () => {
     
       <h1 className='absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl font-bold '>Welcome to Your New Knife Mastery Guide!</h1>
 
-      <p className='item-center justify-center mt-10 text-xl font-bold border-b-2 border-double m-5'>Here, you'll discover the secrets to selecting the perfect knives, maintaining them properly, and mastering the art of safe and efficient cutting. Whether you're a novice in the kitchen or a seasoned home cook, these techniques will elevate your culinary skills to new heights.</p>
+      <p className='flex item-center justify-center mt-10 text-xl font-bold border-b-2 border-double '>Here, you'll discover the secrets to selecting the perfect knives, maintaining them properly, and mastering the art of safe and efficient cutting. Whether you're a novice in the kitchen or a seasoned home cook, these techniques will elevate your culinary skills to new heights.</p>
 
       </div>
     
-<h1 className='flex justify-center mt-5 font-bold'>How to Properly Grip a Knife</h1>
+<h1 className='flex justify-center font-bold m-10'>How to Properly Grip a Knife</h1>
 <p>The grip you use when handling a knife is crucial for safety and efficiency. While the cutting hand takes the lead role, the supporting hand plays a vital role in stabilizing the ingredient being cut.</p>
 
 <h1 className='flex justify-center font-bold'>THE HOLD</h1>

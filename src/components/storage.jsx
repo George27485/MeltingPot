@@ -1,9 +1,12 @@
 import React from "react";
+import storage from '../assets/storage.jpg';
 
 const KitchenStorageTips = () => {
     return (
-        <div className=" bg-gradient-to-b from-transparent to-black  flex flex-col mt-20 w-screen h-screen text-center ">
+        <div className="   flex flex-col mt-20 w-screen h-screen text-center overflow-auto ">
+            <img src={storage} className="flex justify-center h-3/5"/>
         <h1 className="flex justify-center">Kitchen Storage Tips</h1>
+        <div className="bg-gradient-to-b from-transparent to-black">
 <h2>        Welcome to our guide on optimizing kitchen storage! A well-organized kitchen not only enhances efficiency but also makes cooking a more enjoyable experience. In this guide, we'll explore a range of practical tips to help you maximize storage space and keep your kitchen neat and functional.
 </h2>
 
@@ -41,7 +44,7 @@ const KitchenStorageTips = () => {
         Choose kitchen furniture with built-in storage options, such as kitchen islands with drawers or cabinets, or dining benches with under-seat storage. This helps maximize storage space in small kitchens.
 
         By implementing these kitchen storage tips, you can optimize your kitchen space and create a more organized and functional cooking environment.
-    
+    </div>
         </div>
     )
 };

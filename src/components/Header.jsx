@@ -16,7 +16,7 @@ const Header = () => {
       <SubHeading title="The Melting Pot" webTitle ={true} />
       <h1 className="text-golden font-semibold md:text-6xl mb-8">Indulge in Gourmet Recipes Crafted with Passion</h1>
       
-     <Link to="/menu"><button className="bg-white text-black py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200">Explore Menu</button></Link>
+     <Link to="/menu"><button className="bg-white text-black py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200">Explore Recipes</button></Link>
     </div>
     <div className="w-80 mx-auto md:hidden">
      
